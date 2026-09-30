@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+
+case "$(uname -m)" in
+  arm64) agent_arch=arm64 ;;
+  x86_64) agent_arch=x86_64 ;;
+  *) echo 'Flyout: unsupported Mac architecture' >&2; exit 70 ;;
+esac
+exec "$(dirname "$0")/FlyoutAgentHost-$agent_arch" "$@"

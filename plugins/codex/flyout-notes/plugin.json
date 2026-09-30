@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "flyout-notes",
+  "version": "0.1.0",
+  "description": "Access permitted Flyout notes and reminders through the local Flyout app.",
+  "author": {
+    "name": "Depfloy LLC"
+  },
+  "keywords": [
+    "Flyout",
+    "notes",
+    "reminders",
+    "MCP"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Flyout",
+        "shortDescription": "Use notes and reminders stored in Flyout.",
+        "longDescription": "Connects to the local Flyout app. Flyout controls access and confirms deletion natively.",
+        "developerName": "Depfloy LLC",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ]
+      }
+    }
+  }
+}

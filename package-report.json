@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "minimum_app_version": "1.5.8",
+  "helper_sha256": "c7927072a6a53b6389c34bc49f0679e26b33bd1900569cecf4878f70dd13ab73",
+  "helper_bytes": 18735136,
+  "claude_code_arch_helpers": {
+    "arm64": {
+      "sha256": "8e4494bd9f00ced1ce5a4cae2d615b3270e0c10004144a9be77e4ea7754f2baf",
+      "bytes": 4118768
+    },
+    "x86_64": {
+      "sha256": "92340a12de79a29c32c33f6c844d5aeb79790ce7d579d6ac6a64a4763421ed6d",
+      "bytes": 4313616
+    }
+  },
+  "claude_code_thin_helpers_notarized": true,
+  "codex_catalog": ".agents/plugins/marketplace.json",
+  "claude_code_catalog": ".claude-plugin/marketplace.json",
+  "desktop_bundle_sha256": "82887a71298d8fe61d627f94652d97a18a6b0a7d85644ca43a38f6127cf1c206",
+  "contains_credentials": false,
+  "publication": false,
+  "claude_code_notary": {
+    "job": "e0baacaa-5119-4ea7-abe0-058e7d200b42",
+    "status": "Accepted",
+    "zip_sha256": "3ec478e22df5844724ecc3490afbd74f771333f3c6f5d6c5af9ecc04e1670a30"
+  }
+}

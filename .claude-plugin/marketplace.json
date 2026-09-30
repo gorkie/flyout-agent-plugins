@@ -1,0 +1,14 @@
+{
+  "name": "flyout-agents",
+  "description": "Flyout notes and reminders through the local Mac app",
+  "owner": {
+    "name": "Depfloy LLC"
+  },
+  "plugins": [
+    {
+      "name": "flyout-notes",
+      "source": "./plugins/claude-code/flyout-notes",
+      "description": "Use notes and reminders that you explicitly permit in Flyout."
+    }
+  ]
+}

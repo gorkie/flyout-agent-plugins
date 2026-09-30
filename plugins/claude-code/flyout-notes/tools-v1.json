@@ -1,0 +1,355 @@
+[
+  {
+    "annotations": {
+      "openWorldHint": false,
+      "readOnlyHint": true,
+      "title": "Check Flyout connection"
+    },
+    "description": "Checks the paired local Flyout connection.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {},
+      "type": "object"
+    },
+    "name": "flyout_ping",
+    "title": "Check Flyout connection"
+  },
+  {
+    "annotations": {
+      "openWorldHint": false,
+      "readOnlyHint": true,
+      "title": "Get Flyout status"
+    },
+    "description": "Returns protocol, environment, and data access availability.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {},
+      "type": "object"
+    },
+    "name": "flyout_get_status",
+    "title": "Get Flyout status"
+  },
+  {
+    "annotations": {
+      "openWorldHint": false,
+      "readOnlyHint": true,
+      "title": "List Flyout folders"
+    },
+    "description": "Lists folders permitted for reading or note creation.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {},
+      "type": "object"
+    },
+    "name": "flyout_list_folders",
+    "title": "List Flyout folders"
+  },
+  {
+    "annotations": {
+      "openWorldHint": false,
+      "readOnlyHint": true,
+      "title": "Search Flyout notes"
+    },
+    "description": "Searches permitted notes and quick pages; returns bounded summaries.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "cursor": {
+          "maxLength": 4096,
+          "type": "string"
+        },
+        "folder_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "note",
+            "quickPage"
+          ],
+          "type": "string"
+        },
+        "limit": {
+          "maximum": 50,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "query": {
+          "maxLength": 512,
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "type": "object"
+    },
+    "name": "flyout_search_notes",
+    "title": "Search Flyout notes"
+  },
+  {
+    "annotations": {
+      "openWorldHint": false,
+      "readOnlyHint": true,
+      "title": "Read Flyout note"
+    },
+    "description": "Returns one permitted note or quick page in Markdown.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "target": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "kind": {
+              "enum": [
+                "note",
+                "quickPage"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "id"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "target"
+      ],
+      "type": "object"
+    },
+    "name": "flyout_get_note",
+    "title": "Read Flyout note"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": false,
+      "readOnlyHint": false,
+      "title": "Create Flyout note"
+    },
+    "description": "Creates a new note in an explicitly permitted folder or at the permitted root.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "folder_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "markdown": {
+          "maxLength": 262144,
+          "type": "string"
+        },
+        "request_id": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_id",
+        "markdown"
+      ],
+      "type": "object"
+    },
+    "name": "flyout_create_note",
+    "title": "Create Flyout note"
+  },
+  {
+    "annotations": {
+      "destructiveHint": true,
+      "idempotentHint": true,
+      "openWorldHint": false,
+      "readOnlyHint": false,
+      "title": "Request Flyout note deletion"
+    },
+    "description": "Requests note deletion; Flyout asks the user in a native confirmation dialog.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "expected_revision": {
+          "maxLength": 64,
+          "minLength": 64,
+          "type": "string"
+        },
+        "request_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "target": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "kind": {
+              "enum": [
+                "note",
+                "quickPage"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "id"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "request_id",
+        "target",
+        "expected_revision"
+      ],
+      "type": "object"
+    },
+    "name": "flyout_request_delete_note",
+    "title": "Request Flyout note deletion"
+  },
+  {
+    "annotations": {
+      "openWorldHint": false,
+      "readOnlyHint": true,
+      "title": "Check Flyout deletion request"
+    },
+    "description": "Checks the status of a deletion request owned by this client.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "operation_id": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "required": [
+        "operation_id"
+      ],
+      "type": "object"
+    },
+    "name": "flyout_get_operation",
+    "title": "Check Flyout deletion request"
+  },
+  {
+    "annotations": {
+      "openWorldHint": false,
+      "readOnlyHint": true,
+      "title": "List Flyout reminders"
+    },
+    "description": "Lists reminders whose linked targets are within this client's current access.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "cursor": {
+          "maxLength": 4096,
+          "type": "string"
+        },
+        "limit": {
+          "maximum": 50,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "target": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "kind": {
+              "enum": [
+                "note",
+                "quickPage"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "id"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "name": "flyout_list_reminders",
+    "title": "List Flyout reminders"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": false,
+      "readOnlyHint": false,
+      "title": "Create Flyout reminder"
+    },
+    "description": "Creates a permitted reminder and reports its notification scheduling result.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "due_at": {
+          "maxLength": 64,
+          "type": "string"
+        },
+        "label": {
+          "maxLength": 16384,
+          "type": "string"
+        },
+        "repeat_rule": {
+          "enum": [
+            "none",
+            "daily",
+            "weekly"
+          ],
+          "type": "string"
+        },
+        "request_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "target": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "kind": {
+              "enum": [
+                "note",
+                "quickPage"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "id"
+          ],
+          "type": "object"
+        },
+        "timezone": {
+          "maxLength": 128,
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_id",
+        "due_at",
+        "timezone",
+        "repeat_rule"
+      ],
+      "type": "object"
+    },
+    "name": "flyout_create_reminder",
+    "title": "Create Flyout reminder"
+  }
+]

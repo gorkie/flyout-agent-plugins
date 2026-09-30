@@ -1,0 +1,25 @@
+{
+  "logFormatVersion": 1,
+  "jobId": "e0baacaa-5119-4ea7-abe0-058e7d200b42",
+  "status": "Accepted",
+  "statusSummary": "Ready for distribution",
+  "statusCode": 0,
+  "archiveFilename": "claude-code-bin-1.5.8.zip",
+  "uploadDate": "2026-09-30T05:50:40.882Z",
+  "sha256": "3ec478e22df5844724ecc3490afbd74f771333f3c6f5d6c5af9ecc04e1670a30",
+  "ticketContents": [
+    {
+      "path": "claude-code-bin-1.5.8.zip/bin/FlyoutAgentHost-x86_64",
+      "digestAlgorithm": "SHA-256",
+      "cdhash": "c115071cb28673e440cd4a0cffaff0370a7dc2be",
+      "arch": "x86_64"
+    },
+    {
+      "path": "claude-code-bin-1.5.8.zip/bin/FlyoutAgentHost-arm64",
+      "digestAlgorithm": "SHA-256",
+      "cdhash": "b1ad445d0dd0ae5f248f580804f945a79d3829ba",
+      "arch": "arm64"
+    }
+  ],
+  "issues": null
+}

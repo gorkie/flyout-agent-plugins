@@ -1,0 +1,10 @@
+{
+  "name": "flyout-notes",
+  "version": "0.1.0",
+  "description": "Access permitted Flyout notes and reminders through the local Flyout app.",
+  "author": {
+    "name": "Depfloy LLC"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

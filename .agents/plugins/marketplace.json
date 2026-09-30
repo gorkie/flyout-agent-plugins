@@ -1,0 +1,20 @@
+{
+  "name": "flyout-agents",
+  "interface": {
+    "displayName": "Flyout"
+  },
+  "plugins": [
+    {
+      "name": "flyout-notes",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex/flyout-notes"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
