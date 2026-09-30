@@ -1,16 +1,81 @@
-Flyout Notes Plugin License
+Flyout Agent Plugin License
+Version 1.0 — September 30, 2026
 
 Copyright (c) 2026 Depfloy LLC. All rights reserved.
 
-Depfloy LLC grants you a non-exclusive, non-transferable license to download, install,
-and run this plugin with a lawfully obtained Flyout trial or license. You may make
-copies needed for installation or backup and adapt the text instructions for your
-own private use. You may not sell, sublicense, or redistribute the Flyout-developed
-plugin files or executable without written permission from Depfloy LLC, except where
-applicable law permits.
+1. What this covers
+"Plugin" means the Flyout-developed files in this repository and in packages built from it,
+including the FlyoutAgentHost helper, the launcher script, skills (SKILL.md), manifests,
+CONTRACT.md, tools-v1.json and documentation. It does not include the third-party components
+listed in THIRD_PARTY_NOTICES. The Plugin is licensed, not sold.
 
-Third-party components retain their own licenses, listed in THIRD_PARTY_NOTICES.
-Use of the Flyout app and purchases remains governed by the Flyout Terms of Sale:
-https://getflyout.app/terms
+2. License
+Depfloy LLC ("Depfloy") grants you a free, non-exclusive, non-transferable, revocable license
+to download, install, run and make the copies of the Plugin needed for installation, caching by
+your AI client and backup, for your personal or internal business use with the Flyout app.
 
-Nothing here limits rights that cannot be limited under applicable law.
+3. Adapting skills
+You may modify the Plugin's skills, documentation and configuration files for your own use.
+You may not modify the FlyoutAgentHost helper. Modified files are provided without support.
+
+4. Sharing
+You may share links to this repository and fork or view it using GitHub's features. You may
+not otherwise sell, sublicense or distribute the Plugin, modified or unmodified, without
+Depfloy's written permission. Depfloy permits operators of plugin directories and marketplaces
+to which Depfloy submits the Plugin to host, mirror, scan, review and distribute unmodified
+copies of it.
+
+5. Restrictions
+You may not remove copyright, license or notice files; circumvent Flyout's access controls,
+pairing or licensing; or reverse engineer, decompile or disassemble the helper, except to the
+extent applicable law expressly permits despite this restriction.
+
+6. The Flyout app
+The Plugin works only with the Flyout app and grants no license to it. Use of the Flyout app
+and all purchases are governed by the Flyout Terms of Sale (https://getflyout.app/terms).
+Installing the Plugin does not give any AI client access to your notes; access is controlled
+in Flyout.
+
+7. AI clients and services
+You choose the AI client and service you connect. Notes and reminders you permit may be sent
+by that client to its provider under the provider's own terms. Depfloy does not control and is
+not responsible for third-party AI clients or services, or for content already sent to them.
+See https://getflyout.app/privacy.
+
+8. Third-party components
+Third-party components are licensed under their own terms, reproduced in THIRD_PARTY_NOTICES.
+Nothing in this license limits any right you have under those licenses.
+
+9. Trademarks
+"Flyout" and its logo are trademarks of Depfloy LLC. This license grants no trademark rights.
+
+10. Termination
+This license ends automatically if you breach it. When it ends, stop using the Plugin and
+delete your copies. Sections 5, 7, 11, 12, 13 and 14 survive termination.
+
+11. No warranty
+THE PLUGIN IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+12. Limitation of liability
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, DEPFLOY WILL NOT BE LIABLE FOR ANY INDIRECT,
+INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR LOSS OF DATA OR PROFITS, ARISING
+FROM THE PLUGIN. DEPFLOY'S TOTAL LIABILITY FOR THE PLUGIN WILL NOT EXCEED THE AMOUNT YOU PAID
+FOR YOUR FLYOUT LICENSE.
+
+13. Export
+You will comply with applicable export control and sanctions laws when using the Plugin.
+
+14. Governing law and venue
+This license is governed by the laws of the State of Delaware, USA, without regard to its
+conflict-of-laws rules. The state and federal courts located in Delaware have exclusive
+jurisdiction over any dispute arising from it, except where applicable law gives you the right
+to bring a claim in your own country.
+
+15. General
+For the Plugin, this license prevails over the Terms of Sale if they conflict; the Terms of
+Sale govern the Flyout app and purchases. Nothing in this license limits rights, including
+consumer rights, that cannot be limited under applicable law. Later versions of the Plugin may
+come with a different license; the version you received stays under this one.
+
+Contact: Depfloy LLC · hello@getflyout.app
