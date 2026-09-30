@@ -6,19 +6,19 @@
   "claude_code_arch_helpers": {
     "apple-silicon": {
       "path": "bin/apple-silicon/FlyoutAgentHost",
-      "sha256": "e574cced77cd081fe1b27c53a221d59c7df73743589672c0b7f43903ee25e16c",
+      "sha256": "600b05658b8dc5c7d9dfdd8b479d7cb60a181dbb491291e4b18500d6b5058e6b",
       "bytes": 4118768
     },
     "intel": {
       "path": "bin/intel/FlyoutAgentHost",
-      "sha256": "0de0842711e04217380d56d15f979b5edb86c599f25c5d2f5bb4326315a7f766",
+      "sha256": "983a193adf230ea64c4c9c6d7590b21826599d92eea53520df0652a41de16a4f",
       "bytes": 4313616
     }
   },
   "claude_code_thin_helpers_notarized": true,
   "codex_catalog": ".agents/plugins/marketplace.json",
   "claude_code_catalog": ".claude-plugin/marketplace.json",
-  "desktop_bundle_sha256": "f1a28c725820cb153d4336ab27e3b7dd652283f7e0da100b9429bef9aea1307e",
+  "desktop_bundle_sha256": "5b11f15b18d3683297e9b8ff6df837ba3d964e87905b6f86ddaab3566e11fbc7",
   "contains_credentials": false,
   "claude_code_notary": {
     "job": "e0baacaa-5119-4ea7-abe0-058e7d200b42",

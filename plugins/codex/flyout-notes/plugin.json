@@ -6,6 +6,9 @@
   "author": {
     "name": "Depfloy LLC"
   },
+  "homepage": "https://getflyout.app",
+  "repository": "https://github.com/gorkie/flyout-agent-plugins",
+  "license": "LicenseRef-Flyout-Agent-Plugin",
   "keywords": [
     "Flyout",
     "notes",
