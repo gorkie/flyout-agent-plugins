@@ -5,20 +5,20 @@
   "helper_bytes": 18735136,
   "claude_code_arch_helpers": {
     "apple-silicon": {
-      "path": "bin/apple-silicon/FlyoutAgentHost",
-      "sha256": "4859af3b5dcde4fef4e3c20b1f3369736770ecd1efe055716b8d737d45863e8d",
+      "path": "server/apple-silicon/FlyoutAgentHost",
+      "sha256": "90c91a11566f14c21d5a5da4156bf2074336d3602a668cd7cabd3dbf1f09b95c",
       "bytes": 4118768
     },
     "intel": {
-      "path": "bin/intel/FlyoutAgentHost",
-      "sha256": "d73e6380becefae48f57fc9ad1ce8c7fc11141076bfe803ccec8b7f4d20ae9e7",
+      "path": "server/intel/FlyoutAgentHost",
+      "sha256": "3d95a38b5a5983633606f17d466c599c6337e8ec86bfa25b7e0ff5c81c922559",
       "bytes": 4313616
     }
   },
   "claude_code_thin_helpers_notarized": true,
   "codex_catalog": ".agents/plugins/marketplace.json",
   "claude_code_catalog": ".claude-plugin/marketplace.json",
-  "desktop_bundle_sha256": "3cfe4fa44020549b7698b2bf3d997048c04b97bf91214817189d6d6a74373cab",
+  "desktop_bundle_sha256": "31031989a3973dcb491eba4b0f8d6591801eb9bd066a2f95325e5f3964801f5d",
   "contains_credentials": false,
   "claude_code_notary": {
     "job": "e0baacaa-5119-4ea7-abe0-058e7d200b42",

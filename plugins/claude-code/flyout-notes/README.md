@@ -21,5 +21,24 @@ To stop access, revoke this client's connection in Flyout. Uninstalling the plug
 does not revoke the Flyout connection. Support: hello@getflyout.app. Product and policies:
 https://getflyout.app/ · https://getflyout.app/privacy · https://getflyout.app/terms.
 
+## Troubleshooting
+
+When a Flyout tool returns an error, the code tells you what to do:
+
+- `PAIRING_REQUIRED` or `CLIENT_REVOKED`: this client has no active connection. In Flyout, open
+  Settings › Agent Access, choose Add connection, pick this client and pair it. When Flyout asks for
+  the connection file, choose the signed `FlyoutAgentHost` inside this plugin's installed folder:
+  `server/apple-silicon/` on Apple silicon Macs, `server/intel/` on Intel Macs (Claude Code),
+  `bin/` (Codex). Press ⌘⇧. in the file dialog to show hidden folders.
+- `ACCESS_DISABLED`: turn on Allow agent access in Settings › Agent Access.
+- `APP_UNAVAILABLE` or `APP_NOT_INSTALLED`: open Flyout. A connection can open Flyout itself only if
+  you allowed that when pairing.
+- `SCOPE_DENIED` or `NOT_FOUND_OR_NOT_ALLOWED`: the note or action is outside this connection's
+  permissions. Change them in Flyout; no new pairing is needed.
+- `APP_UPGRADE_REQUIRED`: update Flyout to 1.5.8 or later.
+
+If the Flyout tools do not appear at all, start a new session after installing the plugin; AI
+clients load plugin servers when a session starts.
+
 The plugin's installation and private-use rights are in `LICENSE`. Its bundled Swift
 dependencies and their original license texts are in `THIRD_PARTY_NOTICES/`.

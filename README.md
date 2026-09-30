@@ -38,7 +38,7 @@ client installed:
 | Client | Connection file |
 |---|---|
 | Codex | `~/.codex/plugins/cache/flyout-agents/flyout-notes/0.1.0/bin/FlyoutAgentHost` |
-| Claude Code | `~/.claude/plugins/cache/flyout-agents/flyout-notes/0.1.0/bin/apple-silicon/FlyoutAgentHost` (Apple silicon) or `…/bin/intel/FlyoutAgentHost` (Intel) |
+| Claude Code | `~/.claude/plugins/cache/flyout-agents/flyout-notes/0.1.0/server/apple-silicon/FlyoutAgentHost` (Apple silicon) or `…/server/intel/FlyoutAgentHost` (Intel) |
 | Claude Desktop | `server/FlyoutAgentHost` inside the Flyout extension folder in `~/Library/Application Support/Claude/Claude Extensions/` |
 
 Press ⌘⇧. in the file dialog to show hidden folders. Then approve the pairing prompt. Locked notes are never available. A delete request only opens a confirmation in
@@ -67,7 +67,7 @@ In Claude Desktop, uninstall the extension from Settings → Extensions.
 | `.agents/plugins/marketplace.json` | Codex marketplace catalog |
 | `.claude-plugin/marketplace.json` | Claude Code marketplace catalog |
 | `plugins/codex/flyout-notes/` | Codex plugin: skills, MCP config, universal helper |
-| `plugins/claude-code/flyout-notes/` | Claude Code plugin: skills, MCP config, per-architecture helpers (`bin/apple-silicon`, `bin/intel`) and the `bin/flyout-mcp` launcher |
+| `plugins/claude-code/flyout-notes/` | Claude Code plugin: skills, MCP config, per-architecture helpers (`server/apple-silicon`, `server/intel`) and the `server/flyout-mcp` launcher |
 | `claude-desktop/` | Claude Desktop extension (`.mcpb`) |
 | `package-report.json` | Helper hashes and Apple notarization job |
 
