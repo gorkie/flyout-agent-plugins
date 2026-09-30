@@ -1,6 +1,7 @@
 {
   "name": "flyout-notes",
   "displayName": "Flyout",
+  "icon": "./.claude-plugin/icon.png",
   "version": "0.1.0",
   "description": "Access permitted Flyout notes and reminders through the local Flyout app.",
   "author": {
