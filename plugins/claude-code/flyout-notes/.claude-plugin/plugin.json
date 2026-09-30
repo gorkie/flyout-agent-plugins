@@ -9,6 +9,10 @@
   },
   "homepage": "https://getflyout.app",
   "repository": "https://github.com/gorkie/flyout-agent-plugins",
+  "documentationUrl": "https://github.com/gorkie/flyout-agent-plugins/blob/main/plugins/claude-code/flyout-notes/README.md",
+  "supportUrl": "https://getflyout.app/help",
+  "privacyPolicyUrl": "https://getflyout.app/privacy",
+  "termsOfServiceUrl": "https://getflyout.app/terms",
   "license": "LicenseRef-Flyout-Agent-Plugin",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
