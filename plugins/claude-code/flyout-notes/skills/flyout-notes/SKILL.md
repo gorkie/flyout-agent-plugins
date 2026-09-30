@@ -21,7 +21,11 @@ what is wrong:
 
 - `PAIRING_REQUIRED` or `CLIENT_REVOKED`: this client has no active connection. Ask the user to
   open Flyout Settings › Agent Access, choose Add connection, pick this client and choose Pair
-  connection. Pairing again replaces any older connection for the same client.
+  connection. Pairing again replaces any older connection for the same client. When Flyout asks
+  for the connection file, it needs the signed helper inside this plugin's installed folder:
+  `bin/FlyoutAgentHost` for Codex, `bin/apple-silicon/FlyoutAgentHost` (Apple silicon) or
+  `bin/intel/FlyoutAgentHost` (Intel) for Claude Code, `server/FlyoutAgentHost` for Claude
+  Desktop. Give the user the full path when you know where this plugin is installed.
 - `ACCESS_DISABLED`: Agent Access is off. Ask the user to turn on Allow agent access there.
 - `APP_UNAVAILABLE` or `APP_NOT_INSTALLED`: Flyout is not running or not installed. Ask the user
   to open Flyout; letting the connection open Flyout is an option in its settings.

@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+# Claude paketi dosya başına 5 MiB sınırı yüzünden mimari başına ayrı imzalı ikili taşır.
+# Bu betik imzasızdır; Flyout eşlemede bunu değil, mimari klasöründeki FlyoutAgentHost'u ister.
+case "$(uname -m)" in
+  arm64) agent_dir=apple-silicon ;;
+  x86_64) agent_dir=intel ;;
+  *) echo 'Flyout: unsupported Mac architecture' >&2; exit 70 ;;
+esac
+exec "$(dirname "$0")/$agent_dir/FlyoutAgentHost" "$@"

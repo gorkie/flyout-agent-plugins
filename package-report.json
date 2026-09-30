@@ -4,24 +4,28 @@
   "helper_sha256": "c7927072a6a53b6389c34bc49f0679e26b33bd1900569cecf4878f70dd13ab73",
   "helper_bytes": 18735136,
   "claude_code_arch_helpers": {
-    "arm64": {
-      "sha256": "8e4494bd9f00ced1ce5a4cae2d615b3270e0c10004144a9be77e4ea7754f2baf",
+    "apple-silicon": {
+      "path": "bin/apple-silicon/FlyoutAgentHost",
+      "sha256": "e574cced77cd081fe1b27c53a221d59c7df73743589672c0b7f43903ee25e16c",
       "bytes": 4118768
     },
-    "x86_64": {
-      "sha256": "92340a12de79a29c32c33f6c844d5aeb79790ce7d579d6ac6a64a4763421ed6d",
+    "intel": {
+      "path": "bin/intel/FlyoutAgentHost",
+      "sha256": "0de0842711e04217380d56d15f979b5edb86c599f25c5d2f5bb4326315a7f766",
       "bytes": 4313616
     }
   },
   "claude_code_thin_helpers_notarized": true,
   "codex_catalog": ".agents/plugins/marketplace.json",
   "claude_code_catalog": ".claude-plugin/marketplace.json",
-  "desktop_bundle_sha256": "82887a71298d8fe61d627f94652d97a18a6b0a7d85644ca43a38f6127cf1c206",
+  "desktop_bundle_sha256": "f1a28c725820cb153d4336ab27e3b7dd652283f7e0da100b9429bef9aea1307e",
   "contains_credentials": false,
-  "publication": false,
   "claude_code_notary": {
     "job": "e0baacaa-5119-4ea7-abe0-058e7d200b42",
     "status": "Accepted",
-    "zip_sha256": "3ec478e22df5844724ecc3490afbd74f771333f3c6f5d6c5af9ecc04e1670a30"
+    "cdhash": {
+      "apple-silicon": "b1ad445d0dd0ae5f248f580804f945a79d3829ba",
+      "intel": "c115071cb28673e440cd4a0cffaff0370a7dc2be"
+    }
   }
 }

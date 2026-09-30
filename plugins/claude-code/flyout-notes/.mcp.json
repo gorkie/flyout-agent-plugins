@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "flyout": {
-      "command": "${CLAUDE_PLUGIN_ROOT}/bin/FlyoutAgentHost",
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/flyout-mcp",
       "args": ["--client", "claude-code"],
       "env": {}
     }
